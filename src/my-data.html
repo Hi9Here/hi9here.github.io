@@ -11,80 +11,100 @@
     </style>
 
     <h1>Data and Security Models</h1>
-    
+        
     <paper-material elevation="1">
+    
+    <div class="blocks">
 
+        <p>All Data Types or Firebase Paths. Can have any of the three types of States Above but Profiles in reality only has one Permission Needed.</p>
+        
         <h3>States</h3>
         
         <div class="col1">
 
           <div class="col3">
-            <h4>Open V1</h4>
+            <paper-material elevation="1">
+              
+              <h4>Open V1</h4>
 
-              Anyone can see the card and copy the card.
+                Anyone can see the card and copy the card.
+            </paper-material>     
           </div>
 
           <div class="col3">
-            <h4>Locked V1</h4>
+            
+            <paper-material elevation="1">
+              <h4>Locked V1</h4>
 
-              The decks Profile Owner needs to give permission so you can Access the Cards as if they are Open
+                The decks Profile Owner needs to give permission so you can Access the Cards as if they are Open
+            </paper-material>       
           </div>
           
           <div class="col3">
-            <h4>Paid V2</h4>
+            <paper-material elevation="1">
+              <h4>Paid V2</h4>
 
-              <p>You need to pay to access</p>
+                <p>You need to pay to access</p>
+            </paper-material>
+            
           </div>
 
         </div>
-
-            <p>All Data Types or Firebase Paths. Can have any of the three types of States Above but Profiles in reality only has one Permission Needed.</p>
+        
+    
+    </div>
 
     </paper-material>
-    
+ 
     <paper-material elevation="1">
+
+        <div class="blocks">
       
         <h3>Data Types or Firebase Paths</h3>
 
         <div class="col1">
-          
-          <paper-material elevation="1">
             
           <div class="col4">
+            <paper-material elevation="1">
             <h4>Profiles</h4>
               <p>eg deko.fyi/DCH</p>
 
               <p>Each Profile can have upto 5 Users</p>
-          
-          </div>
-          
-          </paper-material>
-
-          <div class="col4">
-            <h4>Decks</h4>
-              <p>eg deko.fyi/DCH/Foyer</p>
-              <p>Profile Owner UID on deck allows that Profile Write Access</p>
-              <p>If not Locked anyone can view it</p>
-              <p>If Locked than only Profiles with UID of Deck in their path can View them</p>
+            </paper-material>
           </div>
 
-          <div class="col4">
-            <h4>Cards</h4>
-              <p>eg deko.fyi/DCH/Foyer/skills_card</p>
-          </div>
+            <div class="col4">
+              <paper-material elevation="1">
+              <h4>Decks</h4>
+                <p>eg deko.fyi/DCH/Foyer</p>
+                <p>Profile Owner UID on deck allows that Profile Write Access</p>
+                <p>If not Locked anyone can view it</p>
+                <p>If Locked than only Profiles with UID of Deck in their path can View them</p>
+              </paper-material>
+            </div>
 
-          <div class="col4">
-            <h4>Users</h4>
-              <p>User is the unique identifier. It is not identity. Meaning we can have the same three states for all data types.</p>
+            <div class="col4">
+              <paper-material elevation="1">
+              <h4>Cards</h4>
+                <p>eg deko.fyi/DCH/Foyer/skills_card</p>
+              </paper-material>
+            </div>
+            
+            <div class="col4">
+              <paper-material elevation="1">
+              <h4>Users</h4>
+                <p>User is the unique identifier. It is not identity. Meaning we can have the same three states for all data types.</p>
 
-              <p>Each User can belong upto 5 Profiles</p>
+                <p>Each User can belong upto 5 Profiles</p>
+
+              </paper-material>
+            </div>
+
           </div>
 
         </div>
 
-      
-    </paper-material>
-    
+      </paper-material>    
 
   </template>
 
