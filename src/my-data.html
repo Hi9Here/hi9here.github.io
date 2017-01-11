@@ -16,41 +16,31 @@
     
     <div class="blocks">
 
+        <h3>States</h3>
+
         <p>All Data Types or Firebase Paths. Can have any of the three types of States Above but Profiles in reality only has one Permission Needed.</p>
         
-        <h3>States</h3>
-        
         <div class="col1">
+      
+          <paper-card heading="Open V1" class="col3 red" >
+            <div class="card-content">
+            Anyone can see the card and copy the card.
+            </div>
+          </paper-card>
 
-          <div class="col3">
-            <paper-material elevation="1">
-              
-              <h4>Open V1</h4>
+          <paper-card heading="Locked V1" class="col3 red">
+            <div class="card-content">
+            The decks Profile Owner needs to give permission so you can Access the Cards as if they are Open
+            </div>
+          </paper-card>
 
-                Anyone can see the card and copy the card.
-            </paper-material>     
-          </div>
+          <paper-card heading="Paid V2" class="col3 red">
+            <div class="card-content">
+            Need to Pay to Access
+            </div>
+          </paper-card>
 
-          <div class="col3">
-            
-            <paper-material elevation="1">
-              <h4>Locked V1</h4>
-
-                The decks Profile Owner needs to give permission so you can Access the Cards as if they are Open
-            </paper-material>       
-          </div>
-          
-          <div class="col3">
-            <paper-material elevation="1">
-              <h4>Paid V2</h4>
-
-                <p>You need to pay to access</p>
-            </paper-material>
-            
-          </div>
-
-        </div>
-        
+        </div>  
     
     </div>
 
@@ -64,44 +54,36 @@
 
         <div class="col1">
             
-          <div class="col4">
-            <paper-material elevation="1">
-            <h4>Profiles</h4>
+          <paper-card heading="Profiles" class="col4 blue">
+            <div class="card-content">
               <p>eg deko.fyi/DCH</p>
-
               <p>Each Profile can have upto 5 Users</p>
-            </paper-material>
-          </div>
+            </div>
+          </paper-card>
 
-            <div class="col4">
-              <paper-material elevation="1">
-              <h4>Decks</h4>
+          <paper-card heading="Decks" class="col4 blue">
+            <div class="card-content">
                 <p>eg deko.fyi/DCH/Foyer</p>
                 <p>Profile Owner UID on deck allows that Profile Write Access</p>
                 <p>If not Locked anyone can view it</p>
                 <p>If Locked than only Profiles with UID of Deck in their path can View them</p>
-              </paper-material>
             </div>
+          </paper-card>
 
-            <div class="col4">
-              <paper-material elevation="1">
-              <h4>Cards</h4>
+          <paper-card heading="Cards" class="col4 blue">
+            <div class="card-content">
                 <p>eg deko.fyi/DCH/Foyer/skills_card</p>
-              </paper-material>
             </div>
-            
-            <div class="col4">
-              <paper-material elevation="1">
-              <h4>Users</h4>
+          </paper-card>
+
+          <paper-card heading="Users" class="col4 blue">
+            <div class="card-content">
                 <p>User is the unique identifier. It is not identity. Meaning we can have the same three states for all data types.</p>
-
                 <p>Each User can belong upto 5 Profiles</p>
-
-              </paper-material>
             </div>
+          </paper-card>
 
-          </div>
-
+        </div>
         </div>
 
       </paper-material>    

@@ -11,6 +11,24 @@
         padding: 10px 10px 30px 10px;
         margin: 10px;
       }
+      paper-card {
+        --paper-card-header-text: {
+          font-size: 20px;
+          padding: 10px;
+        }
+      }
+      paper-card.red {
+        --paper-card-header-color: #fff;
+        --paper-card-header: {
+          background: red;
+        };
+      }
+      paper-card.blue {
+        --paper-card-header-color: #fff;
+        --paper-card-header: {
+          background: blue;
+        };
+      }
       h1 {
         margin: 16px 0;
         color: #212121;
@@ -44,21 +62,16 @@
         text-align: left;
         margin: 5px;
         vertical-align: top;
-      } 
-      .col3 paper-material {
-        padding: 15px;
         height: 150px;
-      }
+      } 
+
       .col4 {
         width: 22%;
         display: inline-block;
         text-align: left;
         margin: 5px;
         vertical-align: top;
-      }
-      .col4 paper-material {
-        padding: 10px;
-        height: 300px;
+        height: 400px;
       }
     </style>
   </template>
