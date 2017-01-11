@@ -6,51 +6,71 @@
     <style include="shared-styles">
       :host {
         display: block;
-
         padding: 10px;
       }
     </style>
 
-    <div class="card">
-      <div class="circle">3</div>
-      <h1>Data and Security Models</h1>
-        <h2>Access to Data Types</h2>
+    <h1>Data and Security Models</h1>
+    
+    <paper-material elevation="1">
 
         <h3>States</h3>
+        <div class="col1">
+          <div class="col3">
+            <h4>Open V1</h4>
 
-          <h4>Open V1</h4>
+              Anyone can see and use the it.
+          </div>
 
-            Anyone can see and use the it.
+          <div class="col3">
+            <h4>Locked V1</h4>
 
-          <h4>Locked V1</h4>
+              Another User needs to OK Access
+          </div>
+          
+          <div class="col3">
+            <h4>Paid V2</h4>
 
-            Another User needs to OK Access
-
-          <h4>Paid V2</h4>
-
-            <p>You need to pay to access</p>
+              <p>You need to pay to access</p>
+          </div>
+        </div>
 
             <p>All Data Types or Firebase Paths. Can have any of the three types of States Above but Profiles in reality only has one, Permission Needed.</p>
 
+    </paper-material>
+    
+    <paper-material elevation="1">
+      
         <h3>Data Types or Firebase Paths</h3>
-
+        
+        <div class="col4">
           <h4>Profiles</h4>
             <p>eg deko.fyi/DCH</p>
 
             <p>Each Profile can have upto 5 Users</p>
+        </div>
 
+        <div class="col4">
           <h4>Decks</h4>
             <p>eg deko.fyi/DCH/Foyer</p>
+        </div>
 
+        <div class="col4">
           <h4>Cards</h4>
             <p>eg deko.fyi/DCH/Foyer/skills_card</p>
+        </div>
 
+        <div class="col4">
           <h4>Users</h4>
             <p>User is the unique identifier. It is not identity. Meaning we can have the same three states for all data types.</p>
 
             <p>Each User can belong upto 5 Profiles</p>
+        </div>
 
-    </div>
+      
+    </paper-material>
+    
+
   </template>
 
   <script>
