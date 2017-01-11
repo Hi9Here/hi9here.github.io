@@ -1,7 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
 
-<dom-module id="my-view4">
+<dom-module id="my-data">
   <template>
     <style include="shared-styles">
       :host {
@@ -22,7 +22,7 @@
 
             Anyone can see and use the it.
 
-          <h4>Permission Needed V1</h4>
+          <h4>Locked V1</h4>
 
             Another User needs to OK Access
 
@@ -32,10 +32,12 @@
 
             <p>All Data Types or Firebase Paths. Can have any of the three types of States Above but Profiles in reality only has one, Permission Needed.</p>
 
-        <h3>Data Types or Firebase Pathss</h3>
+        <h3>Data Types or Firebase Paths</h3>
 
           <h4>Profiles</h4>
             <p>eg deko.fyi/DCH</p>
+
+            <p>Each Profile can have upto 5 Users</p>
 
           <h4>Decks</h4>
             <p>eg deko.fyi/DCH/Foyer</p>
@@ -43,15 +45,17 @@
           <h4>Cards</h4>
             <p>eg deko.fyi/DCH/Foyer/skills_card</p>
 
-        <h2>UIDs</h2>
+          <h4>Users</h4>
             <p>User is the unique identifier. It is not identity. Meaning we can have the same three states for all data types.</p>
+
+            <p>Each User can belong upto 5 Profiles</p>
 
     </div>
   </template>
 
   <script>
     Polymer({
-      is: 'my-view4',
+      is: 'my-data',
     });
   </script>
 </dom-module>

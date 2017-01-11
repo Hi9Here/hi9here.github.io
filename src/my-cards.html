@@ -1,0 +1,44 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-cards">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+      .card {
+        width :40%;
+      }
+    </style>
+
+      <h1>Cards</h1>
+    <div class="card">
+
+        <h2>Skills Card</h2>
+          <h3>Description</h3>
+            <p>A Student Can Copy a Card from a Deck that highlights a Skills. When you have completed that skill the teacher then marks as complete. A teacher can then mark as complete and see who has completed the courses</p>
+          <h3>Student Card</h3>
+            <h4>Attributes</h4>
+              <p>Profile of Teacher</p>
+              <p>Profile of Student</p>
+              <p>Status</p>
+            <ul>
+              <li>Completed</li>
+              <li>Not Started</li>
+              <li>In Progress</li>
+            </ul>
+          <h3>Teachers Card</h3>
+            <h4>Attributes</h4>
+              <p>Profile of Teacher</p>
+
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-cards',
+    });
+  </script>
+</dom-module>
