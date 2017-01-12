@@ -9,66 +9,47 @@
       }
       .blocks {
         padding: 10px 10px 30px 10px;
-        margin: 10px;
+        margin: 10px 10px 20px 10px;
+      }
+      .cards {
+        @apply(--layout-horizontal);
+        @apply(--layout-wrap);
       }
       paper-card {
         --paper-card-header-text: {
-          font-size: 20px;
+          @apply(--paper-font-title);
           padding: 10px;
-        }
+        };
       }
       paper-card.red {
         --paper-card-header-color: #fff;
         --paper-card-header: {
-          background: red;
+          background: var(--paper-red-500);
         };
       }
       paper-card.blue {
         --paper-card-header-color: #fff;
         --paper-card-header: {
-          background: blue;
+          background: var(--paper-blue-500);;
         };
       }
       h1 {
-        margin: 16px 0;
-        color: #212121;
-        font-size: 22px;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: 300;
+        @apply(--paper-font-display1);
       }
       h2 {
-        color: #212121;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: 300;
+        @apply(--paper-font-headline);
       }
       h3 {
-        color: #212121;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: 300;
+        @apply(--paper-font-title);
       }
       h4 {
-        color: #212121;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: 300;
-        margin: 0px 0px 5px 0px;
+        @apply(--paper-font-subhead);
       }
-      .col1 {
-        display: block;
-        text-align: center;
+      p {
+        @apply(--paper-font-body1);
       }
-      .col3 {
-        width: 30%;
-        display: inline-block;
-        text-align: left;
-        margin: 5px;
-        vertical-align: top;
-        height: 150px;
-      } 
-
-      .col4 {
-        width: 22%;
-        display: inline-block;
-        text-align: left;
+      .cols {
+        width: 270px;
         margin: 5px;
         vertical-align: top;
         height: 400px;
